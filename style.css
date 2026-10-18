@@ -1,0 +1,39 @@
+
+/* Navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #292d3d;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover color for inactive pages */
+nav a:not(.active):hover {
+    background-color: #51596e;
+}
+
+/* Current page */
+nav a.active {
+    background-color: #a72f49;
+    color: white;
+    font-weight: bold;
+}
